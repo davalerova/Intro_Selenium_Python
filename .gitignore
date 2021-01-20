@@ -1,0 +1,5 @@
+.idea/
+env/
+python=3.8
+chromedriver.exe
+reports/
