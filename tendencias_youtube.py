@@ -8,11 +8,10 @@ driver.maximize_window()
 boton = driver.find_element_by_link_text('Tendencias')
 boton.click()
 sleep(5)
-primeros_elementos = driver.find_element_by_id('grid-container')
-nombre = primeros_elementos.find_elements_by_class_name('style-scope ytd-video-renderer')
-for n in nombre:
-    print(n.text)
-
+primeros_elementos = driver.find_elements_by_css_selector('#video-title > yt-formatted-string')
+autor = driver.find_elements_by_xpath('//*[@id="text"]/a')
+for i in  range(len(primeros_elementos)):
+    print(primeros_elementos[i].text, autor[i].text)
 
 
 driver.quit()

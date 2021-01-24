@@ -29,7 +29,7 @@ class HomePageTest(unittest.TestCase):
         self.assertEqual(3, len(banners))
 
     def test_vip_promo(self):
-        vip_promo = self.driver.find_element_by_xpath('//*[@id="top"]/body/div[1]/div[2]/div[2]/div/div/div[2]/div[1]/ul/li[4]/a/img')
+        vip_promo = self.driver.find_element_by_xpath('//*[@id="top"]/body/div[1]/div[2]/div[2]/div/div[2]/div[2]/div[3]/ul/li/div/h2/a/font/font')
 
     def test_shopping_car(self):
         shopping_cart_icon = self.driver.find_element_by_css_selector("div.header-minicart span.icon")
